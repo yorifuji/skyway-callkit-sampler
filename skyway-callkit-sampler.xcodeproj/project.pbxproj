@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3BFA19722F9B9FA00EBE78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFA19622F9B9FA00EBE78D /* AppDelegate.swift */; };
+		E3BFA19922F9B9FA00EBE78D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFA19822F9B9FA00EBE78D /* ViewController.swift */; };
+		E3BFA19C22F9B9FA00EBE78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFA19A22F9B9FA00EBE78D /* Main.storyboard */; };
+		E3BFA19E22F9B9FB00EBE78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BFA19D22F9B9FB00EBE78D /* Assets.xcassets */; };
+		E3BFA1A122F9B9FB00EBE78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFA19F22F9B9FB00EBE78D /* LaunchScreen.storyboard */; };
+		E3BFA1AC22F9B9FB00EBE78D /* skyway_callkit_samplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFA1AB22F9B9FB00EBE78D /* skyway_callkit_samplerTests.swift */; };
+		E3BFA1B722F9B9FB00EBE78D /* skyway_callkit_samplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFA1B622F9B9FB00EBE78D /* skyway_callkit_samplerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3BFA1A822F9B9FB00EBE78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3BFA18B22F9B9FA00EBE78D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3BFA19222F9B9FA00EBE78D;
+			remoteInfo = "skyway-callkit-sampler";
+		};
+		E3BFA1B322F9B9FB00EBE78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3BFA18B22F9B9FA00EBE78D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3BFA19222F9B9FA00EBE78D;
+			remoteInfo = "skyway-callkit-sampler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3BFA19322F9B9FA00EBE78D /* skyway-callkit-sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skyway-callkit-sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BFA19622F9B9FA00EBE78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3BFA19822F9B9FA00EBE78D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3BFA19B22F9B9FA00EBE78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3BFA19D22F9B9FB00EBE78D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3BFA1A022F9B9FB00EBE78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3BFA1A222F9B9FB00EBE78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BFA1A722F9B9FB00EBE78D /* skyway-callkit-samplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skyway-callkit-samplerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BFA1AB22F9B9FB00EBE78D /* skyway_callkit_samplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyway_callkit_samplerTests.swift; sourceTree = "<group>"; };
+		E3BFA1AD22F9B9FB00EBE78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BFA1B222F9B9FB00EBE78D /* skyway-callkit-samplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skyway-callkit-samplerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BFA1B622F9B9FB00EBE78D /* skyway_callkit_samplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyway_callkit_samplerUITests.swift; sourceTree = "<group>"; };
+		E3BFA1B822F9B9FB00EBE78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3BFA19022F9B9FA00EBE78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1A422F9B9FB00EBE78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1AF22F9B9FB00EBE78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3BFA18A22F9B9FA00EBE78D = {
+			isa = PBXGroup;
+			children = (
+				E3BFA19522F9B9FA00EBE78D /* skyway-callkit-sampler */,
+				E3BFA1AA22F9B9FB00EBE78D /* skyway-callkit-samplerTests */,
+				E3BFA1B522F9B9FB00EBE78D /* skyway-callkit-samplerUITests */,
+				E3BFA19422F9B9FA00EBE78D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3BFA19422F9B9FA00EBE78D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFA19322F9B9FA00EBE78D /* skyway-callkit-sampler.app */,
+				E3BFA1A722F9B9FB00EBE78D /* skyway-callkit-samplerTests.xctest */,
+				E3BFA1B222F9B9FB00EBE78D /* skyway-callkit-samplerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3BFA19522F9B9FA00EBE78D /* skyway-callkit-sampler */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFA19622F9B9FA00EBE78D /* AppDelegate.swift */,
+				E3BFA19822F9B9FA00EBE78D /* ViewController.swift */,
+				E3BFA19A22F9B9FA00EBE78D /* Main.storyboard */,
+				E3BFA19D22F9B9FB00EBE78D /* Assets.xcassets */,
+				E3BFA19F22F9B9FB00EBE78D /* LaunchScreen.storyboard */,
+				E3BFA1A222F9B9FB00EBE78D /* Info.plist */,
+			);
+			path = "skyway-callkit-sampler";
+			sourceTree = "<group>";
+		};
+		E3BFA1AA22F9B9FB00EBE78D /* skyway-callkit-samplerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFA1AB22F9B9FB00EBE78D /* skyway_callkit_samplerTests.swift */,
+				E3BFA1AD22F9B9FB00EBE78D /* Info.plist */,
+			);
+			path = "skyway-callkit-samplerTests";
+			sourceTree = "<group>";
+		};
+		E3BFA1B522F9B9FB00EBE78D /* skyway-callkit-samplerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFA1B622F9B9FB00EBE78D /* skyway_callkit_samplerUITests.swift */,
+				E3BFA1B822F9B9FB00EBE78D /* Info.plist */,
+			);
+			path = "skyway-callkit-samplerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3BFA19222F9B9FA00EBE78D /* skyway-callkit-sampler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BFA1BB22F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-sampler" */;
+			buildPhases = (
+				E3BFA18F22F9B9FA00EBE78D /* Sources */,
+				E3BFA19022F9B9FA00EBE78D /* Frameworks */,
+				E3BFA19122F9B9FA00EBE78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "skyway-callkit-sampler";
+			productName = "skyway-callkit-sampler";
+			productReference = E3BFA19322F9B9FA00EBE78D /* skyway-callkit-sampler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3BFA1A622F9B9FB00EBE78D /* skyway-callkit-samplerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BFA1BE22F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-samplerTests" */;
+			buildPhases = (
+				E3BFA1A322F9B9FB00EBE78D /* Sources */,
+				E3BFA1A422F9B9FB00EBE78D /* Frameworks */,
+				E3BFA1A522F9B9FB00EBE78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3BFA1A922F9B9FB00EBE78D /* PBXTargetDependency */,
+			);
+			name = "skyway-callkit-samplerTests";
+			productName = "skyway-callkit-samplerTests";
+			productReference = E3BFA1A722F9B9FB00EBE78D /* skyway-callkit-samplerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3BFA1B122F9B9FB00EBE78D /* skyway-callkit-samplerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BFA1C122F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-samplerUITests" */;
+			buildPhases = (
+				E3BFA1AE22F9B9FB00EBE78D /* Sources */,
+				E3BFA1AF22F9B9FB00EBE78D /* Frameworks */,
+				E3BFA1B022F9B9FB00EBE78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3BFA1B422F9B9FB00EBE78D /* PBXTargetDependency */,
+			);
+			name = "skyway-callkit-samplerUITests";
+			productName = "skyway-callkit-samplerUITests";
+			productReference = E3BFA1B222F9B9FB00EBE78D /* skyway-callkit-samplerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3BFA18B22F9B9FA00EBE78D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = yorifuji;
+				TargetAttributes = {
+					E3BFA19222F9B9FA00EBE78D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E3BFA1A622F9B9FB00EBE78D = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E3BFA19222F9B9FA00EBE78D;
+					};
+					E3BFA1B122F9B9FB00EBE78D = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E3BFA19222F9B9FA00EBE78D;
+					};
+				};
+			};
+			buildConfigurationList = E3BFA18E22F9B9FA00EBE78D /* Build configuration list for PBXProject "skyway-callkit-sampler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3BFA18A22F9B9FA00EBE78D;
+			productRefGroup = E3BFA19422F9B9FA00EBE78D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3BFA19222F9B9FA00EBE78D /* skyway-callkit-sampler */,
+				E3BFA1A622F9B9FB00EBE78D /* skyway-callkit-samplerTests */,
+				E3BFA1B122F9B9FB00EBE78D /* skyway-callkit-samplerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3BFA19122F9B9FA00EBE78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFA1A122F9B9FB00EBE78D /* LaunchScreen.storyboard in Resources */,
+				E3BFA19E22F9B9FB00EBE78D /* Assets.xcassets in Resources */,
+				E3BFA19C22F9B9FA00EBE78D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1A522F9B9FB00EBE78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1B022F9B9FB00EBE78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3BFA18F22F9B9FA00EBE78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFA19922F9B9FA00EBE78D /* ViewController.swift in Sources */,
+				E3BFA19722F9B9FA00EBE78D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1A322F9B9FB00EBE78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFA1AC22F9B9FB00EBE78D /* skyway_callkit_samplerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFA1AE22F9B9FB00EBE78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFA1B722F9B9FB00EBE78D /* skyway_callkit_samplerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3BFA1A922F9B9FB00EBE78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3BFA19222F9B9FA00EBE78D /* skyway-callkit-sampler */;
+			targetProxy = E3BFA1A822F9B9FB00EBE78D /* PBXContainerItemProxy */;
+		};
+		E3BFA1B422F9B9FB00EBE78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3BFA19222F9B9FA00EBE78D /* skyway-callkit-sampler */;
+			targetProxy = E3BFA1B322F9B9FB00EBE78D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3BFA19A22F9B9FA00EBE78D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BFA19B22F9B9FA00EBE78D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3BFA19F22F9B9FB00EBE78D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BFA1A022F9B9FB00EBE78D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3BFA1B922F9B9FB00EBE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3BFA1BA22F9B9FB00EBE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3BFA1BC22F9B9FB00EBE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-sampler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-sampler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3BFA1BD22F9B9FB00EBE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-sampler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-sampler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3BFA1BF22F9B9FB00EBE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-samplerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-samplerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyway-callkit-sampler.app/skyway-callkit-sampler";
+			};
+			name = Debug;
+		};
+		E3BFA1C022F9B9FB00EBE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-samplerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-samplerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyway-callkit-sampler.app/skyway-callkit-sampler";
+			};
+			name = Release;
+		};
+		E3BFA1C222F9B9FB00EBE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-samplerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-samplerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "skyway-callkit-sampler";
+			};
+			name = Debug;
+		};
+		E3BFA1C322F9B9FB00EBE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "skyway-callkit-samplerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.skyway-callkit-samplerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "skyway-callkit-sampler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3BFA18E22F9B9FA00EBE78D /* Build configuration list for PBXProject "skyway-callkit-sampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BFA1B922F9B9FB00EBE78D /* Debug */,
+				E3BFA1BA22F9B9FB00EBE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BFA1BB22F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-sampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BFA1BC22F9B9FB00EBE78D /* Debug */,
+				E3BFA1BD22F9B9FB00EBE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BFA1BE22F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-samplerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BFA1BF22F9B9FB00EBE78D /* Debug */,
+				E3BFA1C022F9B9FB00EBE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BFA1C122F9B9FB00EBE78D /* Build configuration list for PBXNativeTarget "skyway-callkit-samplerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BFA1C222F9B9FB00EBE78D /* Debug */,
+				E3BFA1C322F9B9FB00EBE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3BFA18B22F9B9FA00EBE78D /* Project object */;
+}
