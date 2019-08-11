@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="50" id="h26-r8-WKs"/>
                                 </constraints>
                                 <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="tapCall" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2P-7n-QjA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0S-JM-mTC">
                                 <rect key="frame" x="237" y="762" width="100" height="50"/>
@@ -33,8 +36,11 @@
                                     <constraint firstAttribute="height" constant="50" id="xPS-P7-mic"/>
                                 </constraints>
                                 <state key="normal" title="end Call"/>
+                                <connections>
+                                    <action selector="tapEndCall" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHW-rQ-4k4"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-Yn-dlF" userLabel="remoteView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-Yn-dlF" userLabel="remoteView" customClass="SKWVideo">
                                 <rect key="frame" x="127" y="94" width="160" height="120"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -62,7 +68,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-dT-jsN" userLabel="localView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-dT-jsN" userLabel="localView" customClass="SKWVideo">
                                 <rect key="frame" x="127" y="264" width="160" height="120"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -70,6 +76,12 @@
                                     <constraint firstAttribute="width" constant="160" id="rGC-oT-Wsi"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oal-LP-Nbd">
+                                <rect key="frame" x="207" y="842" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,8 +90,10 @@
                             <constraint firstItem="n0S-JM-mTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30" id="7nT-Hc-PUm"/>
                             <constraint firstItem="gHh-e0-3GC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="8Wq-vp-EWy"/>
                             <constraint firstItem="eFh-Yn-dlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANp-uK-ITa"/>
+                            <constraint firstItem="Oal-LP-Nbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kn5-9r-t3g"/>
                             <constraint firstItem="T2e-dT-jsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOL-bg-c0Q"/>
                             <constraint firstItem="gHh-e0-3GC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-30" id="MTw-G5-GBI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oal-LP-Nbd" secondAttribute="bottom" constant="20" id="TIh-3r-ysh"/>
                             <constraint firstItem="KXk-FD-SIB" firstAttribute="top" secondItem="eFh-Yn-dlF" secondAttribute="bottom" constant="10" id="UjG-jt-ARf"/>
                             <constraint firstItem="T2e-dT-jsN" firstAttribute="top" secondItem="KXk-FD-SIB" secondAttribute="bottom" constant="10" id="V24-Rj-9ld"/>
                             <constraint firstItem="n0S-JM-mTC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="bd8-vA-uq2"/>
@@ -88,6 +102,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="callButton" destination="gHh-e0-3GC" id="Vcx-z5-Sf0"/>
+                        <outlet property="endCallButton" destination="n0S-JM-mTC" id="GQC-gg-g9r"/>
+                        <outlet property="localStreamView" destination="T2e-dT-jsN" id="hrX-Vk-6K4"/>
+                        <outlet property="myPeerIdLabel" destination="Oal-LP-Nbd" id="BNb-Kd-zVW"/>
+                        <outlet property="remoteStreamView" destination="eFh-Yn-dlF" id="MB0-1A-5gb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
