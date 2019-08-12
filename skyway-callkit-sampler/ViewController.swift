@@ -131,18 +131,27 @@ extension ViewController {
     func showPeersDialog(_ peer: SKWPeer, handler: @escaping (String) -> Void) {
         peer.listAllPeers() { peers in
             if let peerIds = peers as? [String] {
-                let alert = UIAlertController(title: "接続中のPeerId", message: "接続先を選択してください", preferredStyle: .alert)
-                for peerId in peerIds{
-                    if peerId != peer.identity {
-                        let peerIdAction = UIAlertAction(title: peerId, style: .default, handler: { (alert) in
-                            handler(peerId)
-                        })
-                        alert.addAction(peerIdAction)
-                    }
+                if peerIds.count <= 1 {
+                    let alert = UIAlertController(title: "接続中のPeerId", message: "接続先がありません", preferredStyle: .alert)
+                    let noAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+                    alert.addAction(noAction)
+                    self.present(alert, animated: true, completion: nil)
+
                 }
-                let noAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
-                alert.addAction(noAction)
-                self.present(alert, animated: true, completion: nil)
+                else {
+                    let alert = UIAlertController(title: "接続中のPeerId", message: "接続先を選択してください", preferredStyle: .alert)
+                    for peerId in peerIds{
+                        if peerId != peer.identity {
+                            let peerIdAction = UIAlertAction(title: peerId, style: .default, handler: { (alert) in
+                                handler(peerId)
+                            })
+                            alert.addAction(peerIdAction)
+                        }
+                    }
+                    let noAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+                    alert.addAction(noAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
         }
     }
