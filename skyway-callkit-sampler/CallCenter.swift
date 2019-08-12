@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFoundation
 import CallKit
 
 class CallCenter: NSObject {
@@ -65,6 +66,11 @@ class CallCenter: NSObject {
 
     func Connected() {
         provider.reportOutgoingCall(with: uuid, connectedAt: nil)
+    }
+
+    func ConfigureAudioSession() {
+        // Setup AudioSession
+        try? AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: .voiceChat, options: [])
     }
 }
 

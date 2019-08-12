@@ -255,11 +255,13 @@ extension ViewController: CXProviderDelegate {
     }
 
     func provider(_ provider: CXProvider, perform action: CXStartCallAction) {
+        callCenter.ConfigureAudioSession()
         callCenter.Connecting()
         action.fulfill()
     }
 
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
+        callCenter.ConfigureAudioSession()
         if let peer = self.dataConnection?.peer {
             self.call(targetPeerId: peer)
         }
