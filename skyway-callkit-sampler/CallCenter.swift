@@ -74,3 +74,34 @@ class CallCenter: NSObject {
     }
 }
 
+// MARK: DEBUG
+
+extension CallCenter {
+    func setupNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleRouteChange),
+                                               name: AVAudioSession.routeChangeNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleInterruption),
+                                               name: AVAudioSession.interruptionNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleMediaServerReset),
+                                               name: AVAudioSession.mediaServicesWereResetNotification,
+                                               object: nil)
+    }
+
+    @objc func handleRouteChange(notification: Notification) {
+        print("handleRouteChange: \(notification)")
+    }
+
+    @objc func handleInterruption(notification: Notification) {
+        print("handleInterruption: \(notification)")
+    }
+
+    @objc func handleMediaServerReset(notification: Notification) {
+        print("handleMediaServerReset: \(notification)")
+    }
+}
+

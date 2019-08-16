@@ -46,6 +46,7 @@ class ViewController: UIViewController {
 
         checkPermissionAudio()
         callCenter.setup(self)
+//        callCenter.setupNotifications()
         setup()
     }
 
