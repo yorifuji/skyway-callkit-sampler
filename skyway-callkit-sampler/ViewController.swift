@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if AppDelegate.shared.skywayAPIKey == nil || AppDelegate.shared.skywayDomain == nil {
-            let alert = UIAlertController(title: "エラー", message: "APIKEYかDOMAINが設定されていません", preferredStyle: .alert)
+            let alert = UIAlertController(title: "エラー", message: "APIKEYとDOMAINがAppDelegateに設定されていません", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default)
             alert.addAction(ok)
             self.present(alert, animated: true, completion: nil)
